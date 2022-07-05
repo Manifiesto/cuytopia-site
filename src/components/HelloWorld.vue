@@ -18,11 +18,11 @@
 
 <template>
 
-  <!-- <button v-if="isMetamaskSupported" @click="connect">Sign In with Metamask</button>
+  <button v-if="isMetamaskSupported" @click="connect">Sign In with Metamask</button>
 
   <p v-else>Install Metamask extension</p>
 
-  <p>{{ address.substring(0, 8) + '...' }}</p> -->
+  <p>{{ address.substring(0, 8) + '...' }}</p>
 
     <header>
       <nav class="barnav">
