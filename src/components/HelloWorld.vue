@@ -18,11 +18,11 @@
 
 <template>
 
-  <button v-if="isMetamaskSupported" @click="connect">Sign In with Metamask</button>
+  <!-- <button v-if="isMetamaskSupported" @click="connect">Sign In with Metamask</button>
 
   <p v-else>Install Metamask extension</p>
 
-  <p>{{ address.substring(0, 8) + '...' }}</p>
+  <p>{{ address.substring(0, 8) + '...' }}</p> -->
 
     <header>
       <nav class="barnav">
@@ -34,7 +34,7 @@
           <li>Team</li>
           <li>FAQ</li>
         </ul>
-        <button>CONNECT</button>
+        <button v-if="isMetamaskSupported" @click="connect">CONNECT</button>
       </nav>
     </header>
 
@@ -62,7 +62,7 @@
       <p class="card-title">MEET THE CUYTOPIANS</p> <br>
       <p class="card-subtitle">This is the the start of a solarpunk adventure and own a digital guinea pig</p> <br><br>
 
-      <button  v-if="isMetamaskSupported" @click="connect">CONNECT</button>
+      <button  v-if="isMetamaskSupported" @click="connect">CONNECT</button> <br>
 
       <p>{{ address.substring(0, 8) + '...' }}</p>
 
